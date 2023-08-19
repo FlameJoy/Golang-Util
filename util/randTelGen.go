@@ -10,7 +10,7 @@ import (
 var def = []int{901, 903, 904, 905, 906, 911, 921, 950, 961, 963, 965, 981}
 
 // Telephone number generator
-func RandTelGen(length int, mask bool) string {
+func TelGen(length int, mask bool) string {
 	source := rand.NewSource(time.Now().Unix())
 	rnd := rand.New(source)
 	runes := []rune("1234567890")

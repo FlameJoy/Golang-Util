@@ -7,7 +7,7 @@ import (
 )
 
 // Generate random filename
-func RandFilenameGen(length int) string {
+func FilenameGen(length int) string {
 	source := rand.NewSource(time.Now().Unix())
 	rnd := rand.New(source)
 	randBytes := make([]byte, length)
